@@ -41,8 +41,10 @@ import formatMongoError from '../utils/mongoErrorFormatter.js';
  *
  *  The errorHandler middleware will automatically catch and format the error.
  */
-const errorHandler = (err, req, res) => {
-  console.error('> ==== errorHandler', err);
+const errorHandler = (err, req, res, _next) => {
+  console.error('> ==== errorHandler', err.message || err);
+  // reference _next to avoid linter unused param warnings
+  void _next;
 
   // Default status and message
   let statusCode = err.statusCode || 500;

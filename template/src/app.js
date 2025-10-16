@@ -11,6 +11,7 @@ import errorHandler from './middlewares/errorHandler.js';
 //   import Routes
 // --------------------------------
 import routes from './routes/index.js';
+import heathCheckRouter from './routes/health.routes.js';
 
 // --------------------------------
 // Initialize Express app
@@ -34,6 +35,11 @@ const corsOptions = {
   credentials: true,
 };
 app.use(cors(corsOptions));
+
+// --------------------------------
+//  health check Routes 
+// --------------------------------
+app.use('/',heathCheckRouter);
 
 // --------------------------------
 // Routes
