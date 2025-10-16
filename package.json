@@ -1,0 +1,18 @@
+{
+  "name": "create-be-boilerplate",
+  "version": "1.0.0",
+  "description": "CLI to create a Node.js + Express backend boilerplate with JWT, middlewares, and utilities",
+  "bin": {
+    "create-be-boilerplate": "./index.js"
+  },
+  "type": "module",
+  "keywords": [
+    "express",
+    "nodejs",
+    "backend",
+    "boilerplate",
+    "cli"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}

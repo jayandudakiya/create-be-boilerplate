@@ -1,0 +1,11 @@
+const USER_ROLES_ENUM = {
+  SUPER_ADMIN: 'SUPER_ADMIN',
+  ADMIN: 'ADMIN',
+  SALES: 'SALES',
+  PM: 'PM',
+  CUSTOMER: 'CUSTOMER',
+};
+
+const USER_ROLE = Object.values(USER_ROLES_ENUM);
+
+export { USER_ROLES_ENUM, USER_ROLE };
