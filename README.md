@@ -1,12 +1,12 @@
-# 🚀 Backend Template (TypeScript + Express + Mongoose)
+# 🚀 Backend Template (JavaScript + Express + Mongoose)
 
-A clean and modern backend starter using **TypeScript**, **Express**, and **Mongoose**, designed to help you build scalable Node.js APIs fast.
+A clean and modern backend starter using **JavaScript**, **Express**, and **Mongoose**, designed to help you build scalable Node.js APIs fast.
 
 ---
 
 ## 🧩 Features
 
-- ⚙️ TypeScript-based structure
+- ⚙️ JavaScript-based structure
 - 🧱 Express with modular architecture
 - 📦 Mongoose ORM for MongoDB
 - 🔐 Ready for authentication (JWT + bcrypt)
@@ -24,7 +24,6 @@ src/
 ├── routes/ # API route definitions
 ├── services/ # Database logic and helpers
 ├── utils/ # Common utilities (response handlers, etc.)
-├── types/ # Shared TypeScript types
 ├── app.ts # Express app setup
 └── server.ts # Server entry point
 ```
@@ -68,7 +67,7 @@ GET	/api/users	Get all users
 
 - Node.js + Express
 
-- TypeScript
+- JavaScript
 
 - MongoDB + Mongoose
 
