@@ -1,6 +1,6 @@
 {
   "name": "create-be-boilerplate",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "CLI to create a Node.js + Express backend boilerplate with JWT, middlewares, and utilities",
   "bin": {
     "create-be-boilerplate": "./index.js"
