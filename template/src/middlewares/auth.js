@@ -32,7 +32,7 @@ export const authenticateRoute = async (req, res, next) => {
     }
 
     const token = authHeader.split(' ')[1];
-    const payload = await verifyToken({ token });
+    const payload = await verifyToken({ token, secret: process.env.JWT_SECRET });
 
     if (!payload?.uid) {
       return next(appError('Invalid token payload', HTTP_STATUS[401]));

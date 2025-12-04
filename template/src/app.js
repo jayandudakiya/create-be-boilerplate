@@ -1,5 +1,5 @@
 import dotenv from 'dotenv';
-dotenv.config();
+dotenv.config({ path: '.env.example' }); // Load environment variables from .env.example for template purposes 
 
 import express from 'express';
 import cookieParser from 'cookie-parser';
